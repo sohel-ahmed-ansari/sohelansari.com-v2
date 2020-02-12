@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70.876" height="76.401" viewBox="0 0 70.876 76.401">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e23337;
+      }
+    </style>
+  </defs>
+  <path id="Icon_awesome-angular" data-name="Icon awesome-angular" class="cls-1" d="M30.065,42.514h13l-6.5-15.621Zm6.5-40.264L1.125,14.938,6.548,61.956l30.015,16.7,30.015-16.7L72,14.938Zm22.2,58.29H50.479L46.011,49.387H27.149L22.681,60.54H14.376L36.563,10.692Z" transform="translate(-1.125 -2.25)"/>
+</svg>

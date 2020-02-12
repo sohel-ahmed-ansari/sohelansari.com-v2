@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html"
@@ -48,7 +49,7 @@ const config = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        test: /\.(png|svg|jpg|jpeg|gif|ttf|otf)$/,
         loader: "file-loader",
         options: { name: '/static/[name].[ext]' }
       }
@@ -59,6 +60,10 @@ const config = {
 module.exports = (env, argv) => {
   if (argv.mode === 'development') {
     config.devtool = 'eval-source-map';
+  } else {
+    config.optimization = {
+      minimizer: [new UglifyJsPlugin()],
+    }
   }
   return config;
 };

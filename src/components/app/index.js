@@ -1,10 +1,12 @@
 import React from 'react';
+
 import './style.less';
+import Intro from '../intro';
 
 const App = () => {
   return (
     <div className="app">
-      <div className="app__title">This is a React-Webpack boiler plate!</div>
+      <Intro/>
     </div>
   );
 };

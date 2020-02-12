@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="17.75" viewBox="0 0 15 17.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f4811e;
+      }
+    </style>
+  </defs>
+  <path id="Icon_awesome-stack-overflow" data-name="Icon awesome-stack-overflow" class="cls-1" d="M11.6,13.3,3.847,11.668l-.325,1.557,7.754,1.624Zm2.021-3.447L7.539,4.774l-1.01,1.22,6.082,5.083ZM12.385,11.43,5.2,8.074,4.54,9.52l7.179,3.348ZM10.463,2.25,9.2,3.2l4.727,6.351L15.19,8.6Zm.812,13H3.351v1.573h7.924Zm1.573,3.17H1.775V13.66H.19V20H14.433V13.66H12.848Z" transform="translate(-0.19 -2.25)"/>
+</svg>

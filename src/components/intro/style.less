@@ -1,0 +1,70 @@
+@import "../../styles/variables.less";
+
+@titleFontSize: 50px;
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  &__text-color1 {
+    color: @pink-rose;
+  }
+  &__text-color2 {
+    color: @aqua;
+  }
+  &__text-color3 {
+    color: @lemon;
+  }
+  .computer {
+    z-index: 0;
+  }
+}
+
+.intro-row {
+  display: flex;
+  align-items: flex-end;
+  z-index: 1;
+  &__left-gap {
+    width: 10%;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  &__box {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    &--color1 {
+      background-color: @pink-rose;
+    }
+    &--color2 {
+      background-color: @aqua;
+    }
+  }
+  .greeting, .summary {
+    flex-grow: 1;
+    padding-right: 30px;
+  }
+}
+
+.greeting {
+  &__title {
+    font-size: @titleFontSize;
+    &--color1 {
+      color: @lemon;
+    }
+  }
+  &__sub-title {
+    font-size: @titleFontSize*0.6;
+  }
+  &__sub-title-small {
+    font-size: @titleFontSize*0.5;
+  }
+}
+
+.summary {
+  font-size: @titleFontSize*0.4;
+}
