@@ -1,0 +1,26 @@
+@import "../../../styles/variables.less";
+
+.intro-mobile-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  opacity: 0.1;
+  display: none;
+  &__box1 {
+    width: 50vw;
+    height: 50vw;
+    background-color: @pink-rose;
+  }
+  &__box2 {
+    margin-left: 50vw;
+    width: 50vw;
+    height: 50vw;
+    background-color: @aqua;
+  }
+}
+
+@media (max-width: 900px) {
+  .intro-mobile-bg {
+    display: block;
+  }
+}

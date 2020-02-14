@@ -1,12 +1,12 @@
 @import "../../styles/variables.less";
 
-@titleFontSize: 50px;
+@fontSize: 50px;
+@introBottomPadding: 30px;
 
 .intro {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  margin-bottom: 30px;
   &__text-color1 {
     color: @pink-rose;
   }
@@ -25,18 +25,15 @@
   display: flex;
   align-items: flex-end;
   z-index: 1;
-  &__left-gap {
-    width: 10%;
-    flex-basis: auto;
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
+  max-height: 300px;
+  overflow: hidden;
   &__box {
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    width: 25vw;
+    padding-top: 25%;
     &--color1 {
       background-color: @pink-rose;
     }
@@ -44,27 +41,67 @@
       background-color: @aqua;
     }
   }
-  .greeting, .summary {
-    flex-grow: 1;
-    padding-right: 30px;
-  }
+}
+
+.greeting, .summary {
+  flex-grow: 1;
+  padding-left: 10%;
+  padding-right: 30px;
 }
 
 .greeting {
   &__title {
-    font-size: @titleFontSize;
+    font-size: @fontSize;
+    white-space: nowrap;
     &--color1 {
       color: @lemon;
     }
   }
   &__sub-title {
-    font-size: @titleFontSize*0.6;
+    font-size: @fontSize*0.6;
+    white-space: nowrap;
   }
   &__sub-title-small {
-    font-size: @titleFontSize*0.5;
+    font-size: @fontSize*0.5;
+    white-space: nowrap;
   }
 }
 
 .summary {
-  font-size: @titleFontSize*0.4;
+  font-size: @fontSize*0.4;
+}
+
+@media (max-width: 900px) {
+  @fontSizeMobile: 40px;
+  .greeting, .summary {
+    padding: 0 15%;
+  }
+  .greeting {
+    &__title {
+      font-size: @fontSizeMobile;
+    }
+    &__sub-title {
+      font-size: @fontSizeMobile*0.6;
+    }
+    &__sub-title-small {
+      font-size: @fontSizeMobile*0.5;
+    }
+  }
+  .summary {
+    font-size: @fontSizeMobile*0.4;
+  }
+  .intro-row {
+    height: 50vw;
+    align-items: center;
+    max-height: initial;
+    overflow: visible;
+    &__box {
+      &--color1, &--color2 {
+        display: none;
+      }
+    }
+  }
+  .computer {
+    display: none;
+  }
 }
