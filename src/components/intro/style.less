@@ -1,12 +1,22 @@
 @import "../../styles/variables.less";
 
 @fontSize: 50px;
-@introBottomPadding: 30px;
+@fontSizeMedium: 40px;
+@fontSizeSmall: 35px;
 
 .intro {
+  font-size: @fontSize;
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  h1 {
+    font-size: 1em;
+    margin: 0;
+  }
+  h2 {
+    font-size: 0.6em;
+    margin: 0;
+  }
   &__text-color1 {
     color: @pink-rose;
   }
@@ -51,50 +61,51 @@
 
 .greeting {
   &__title {
-    font-size: @fontSize;
+    font-weight: normal;
     white-space: nowrap;
     &--color1 {
       color: @lemon;
     }
   }
   &__sub-title {
-    font-size: @fontSize*0.6;
+    font-weight: normal;
     white-space: nowrap;
   }
   &__sub-title-small {
-    font-size: @fontSize*0.5;
+    font-size: 0.8em;
+    font-weight: normal;
     white-space: nowrap;
   }
 }
 
 .summary {
-  font-size: @fontSize*0.4;
+  font-size: 0.4em;
+  font-weight: normal;
 }
 
 @media (max-width: 900px) {
-  @fontSizeMobile: 40px;
+  .intro {
+    font-size: @fontSizeMedium;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro {
+    font-size: @fontSizeSmall;
+  }
+}
+
+@media @mobile {
   .greeting, .summary {
     padding: 0 15%;
   }
-  .greeting {
-    &__title {
-      font-size: @fontSizeMobile;
-    }
-    &__sub-title {
-      font-size: @fontSizeMobile*0.6;
-    }
-    &__sub-title-small {
-      font-size: @fontSizeMobile*0.5;
-    }
-  }
-  .summary {
-    font-size: @fontSizeMobile*0.4;
+  .intro {
+    font-size: @fontSizeMedium;
   }
   .intro-row {
     height: 50vw;
     align-items: center;
     max-height: initial;
-    overflow: visible;
     &__box {
       &--color1, &--color2 {
         display: none;
