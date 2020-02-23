@@ -1,15 +1,15 @@
 @import '../../styles/variables.less';
 
 .skills {
-  width: 100vw;
-  margin-bottom: 50px;
+  margin-bottom: @marginBetweenSections;
   header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
   }
   &__title {
-    margin-left: 10px;
+    margin: 0 0 0 10px;
     font-size: 24px;
     font-weight: normal;
   }
@@ -26,11 +26,12 @@
   align-items: center;
   justify-content: start;
   flex-direction: column;
-  padding: 0 15px 30px;
   box-sizing: border-box;
+  padding: 0 15px;
+  margin-bottom: 40px;
   &__title {
     font-size: 15px;
-    margin-bottom: 5px;
+    margin-top: 15px;
     text-align: center;
     width: 100%;
   }

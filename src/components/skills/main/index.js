@@ -17,14 +17,14 @@ const Main = () => {
   return (
     <main>
       <SkillItem label={'Javascript'} imgSrc={imgJavascript}/>
-      <SkillItem label={'HTML5'} imgSrc={imgHtml5}/>
-      <SkillItem label={'CSS3'} imgSrc={imgCss3}/>
-      <SkillItem label={'less'} imgSrc={imgLess}/>
-      <SkillItem label={'Bootstrap'} imgSrc={imgBootstrap}/>
       <SkillItem label={'React'} imgSrc={imgReact}/>
       <SkillItem label={'Redux'} imgSrc={imgRedux}/>
       <SkillItem label={'Knockout.js'} imgSrc={imgKnockout}/>
       <SkillItem label={'jQuery'} imgSrc={imgJquery}/>
+      <SkillItem label={'HTML5'} imgSrc={imgHtml5}/>
+      <SkillItem label={'CSS3'} imgSrc={imgCss3}/>
+      <SkillItem label={'less'} imgSrc={imgLess}/>
+      <SkillItem label={'Bootstrap'} imgSrc={imgBootstrap}/>
       <SkillItem label={'Node.js'} imgSrc={imgNode}/>
       <SkillItem label={'Webpack'} imgSrc={imgWebpack}/>
     </main>
