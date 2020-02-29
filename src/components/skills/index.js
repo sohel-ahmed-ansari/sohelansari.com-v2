@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './header';
+import Header from '../section-header';
 import Main from './main';
-import './style.less';
+import imgCoffee from './images/coffee.svg';
 
 const Skills = () => (
-  <section className="skills">
-    <Header></Header>
+  <section className="section">
+    <Header title="Skills" titleIconSrc={imgCoffee}></Header>
     <Main></Main>
   </section>
 );
