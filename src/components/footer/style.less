@@ -1,0 +1,39 @@
+@import '../../styles/variables.less';
+
+.footer {
+  background-color: #000000;
+  padding: 10px;
+  font-size: 20px;
+  header h1 {
+    font-size: 1em;
+  }
+}
+
+.footer-sub-section {
+  margin-bottom: 15px;
+}
+
+.footer-sub-section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  &__icon {
+    width: 12px;
+  }
+  &__title {
+    margin: 4px 0 0 10px;
+    font-weight: bold;
+  }
+}
+
+.footer-sub-section-main {
+  margin-left: 22px;
+  color: @lighter-carbon;
+  font-size: 0.8em;
+  p, a {
+    margin: 0;
+    color: @lighter-carbon;
+  }
+}
+

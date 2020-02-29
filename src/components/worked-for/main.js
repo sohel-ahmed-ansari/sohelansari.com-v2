@@ -9,7 +9,7 @@ import imgOnecom from './images/onecom.svg';
 
 const Main = () => {
   return (
-    <main class="section-main">
+    <main className="section-main">
       <LogoWithText imgSrc={imgZeus} isLightBg={true}/>
       <LogoWithText imgSrc={imgAccenture} isLightBg={true}/>
       <LogoWithText imgSrc={imgNexsales} isLightBg={true}/>

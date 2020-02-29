@@ -4,6 +4,7 @@ import './style.less';
 import Intro from '../intro';
 import Skills from '../skills';
 import WorkedFor from '../worked-for';
+import Footer from '../footer';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Intro/>
       <Skills/>
       <WorkedFor/>
+      <Footer/>
     </div>
   );
 };
