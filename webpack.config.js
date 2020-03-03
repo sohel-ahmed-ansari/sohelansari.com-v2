@@ -1,6 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html"
@@ -29,26 +28,6 @@ const config = {
         }
       },
       {
-        test: /\.less$/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-          {
-            loader: 'less-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-        ],
-      },
-      {
         test: /\.(png|svg|jpg|jpeg|gif|ttf|otf)$/,
         loader: "file-loader",
         options: { name: '/static/[name].[ext]' }
@@ -57,13 +36,41 @@ const config = {
   }
 };
 
+styleLoaderRules = {
+  dev: {
+    test: /\.less$/,
+    use: [
+      'style-loader',
+      {
+        loader: 'css-loader',
+        options: {
+          sourceMap: true,
+        },
+      },
+      {
+        loader: 'less-loader',
+        options: {
+          sourceMap: true,
+        },
+      },
+    ],
+  },
+  prod: {
+    test: /\.less$/,
+    use: [
+      'style-loader',
+      'css-loader',
+      'less-loader'
+    ]
+  }
+}
+
 module.exports = (env, argv) => {
   if (argv.mode === 'development') {
     config.devtool = 'eval-source-map';
+    config.module.rules.push(styleLoaderRules.dev);
   } else {
-    config.optimization = {
-      minimizer: [new UglifyJsPlugin()],
-    }
+    config.module.rules.push(styleLoaderRules.prod);
   }
   return config;
 };
