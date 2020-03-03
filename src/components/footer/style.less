@@ -1,11 +1,20 @@
 @import '../../styles/variables.less';
 
 .footer {
-  background-color: #000000;
+  background-color: @dark-carbon;
   padding: 10px;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
   header h1 {
     font-size: 1em;
+  }
+}
+
+.footer-section {
+  margin-left: 50px;
+  &:first-child {
+    margin-left: 0;
   }
 }
 
