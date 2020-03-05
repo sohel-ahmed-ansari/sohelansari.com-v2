@@ -28,7 +28,7 @@ const Main = () => {
       <LogoWithText label={'TypeScript'} imgSrc={imgTypescript}/>
       <LogoWithText label={'Bootstrap'} imgSrc={imgBootstrap}/>
       <LogoWithText label={'Node.js'} imgSrc={imgNode}/>
-      <LogoWithText label={'Webpack'} imgSrc={imgWebpack}/>
+      <LogoWithText label={'webpack'} imgSrc={imgWebpack}/>
     </main>
   );
 };

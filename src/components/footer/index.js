@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="footer">
       <section className="footer-section">
         <header>
-          <h1>PERSONAL INFO</h1>
+          <h1>Personal info</h1>
         </header>
         <main>
           <section className="footer-sub-section">
@@ -47,7 +47,7 @@ const Footer = () => {
       </section>
       <section className="footer-section">
         <header>
-          <h1>LINKS</h1>
+          <h1>Links</h1>
         </header>
         <main>
           <section className="footer-sub-section">
@@ -66,7 +66,7 @@ const Footer = () => {
       </section>
       <section className="footer-section">
         <header>
-          <h1>RESUME</h1>
+          <h1>Resume</h1>
         </header>
         <main>
           <section className="footer-sub-section">
