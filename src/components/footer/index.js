@@ -1,3 +1,4 @@
+/* global ga */
 import React from 'react';
 import imgLocation from './images/location.svg';
 import imgEmail from './images/email.svg';
@@ -8,6 +9,9 @@ import imgDownload from './images/download.svg';
 import './style.less';
 
 const Footer = () => {
+  const onResumeDownloadClick = () => {
+    ga('send', 'event', 'Download CV', 'click', 'Footer Link');
+  };
   return (
     <footer className="footer">
       <section className="footer-section">
@@ -51,16 +55,24 @@ const Footer = () => {
         </header>
         <main>
           <section className="footer-sub-section">
-            <header className="footer-sub-section-header">
+            <a
+              className="footer-sub-section-header"
+              href="https://in.linkedin.com/in/sohelansari"
+              target="_blank"
+            >
               <img className="footer-sub-section-header__icon" src={imgLinkedin}></img>
               <div className="footer-sub-section-header__title">LinkedIn</div>
-            </header>
+            </a>
           </section>
           <section className="footer-sub-section">
-            <header className="footer-sub-section-header">
+            <a
+              className="footer-sub-section-header"
+              href="https://stackoverflow.com/users/2279116/shinob"
+              target="_blank"
+            >
               <img className="footer-sub-section-header__icon" src={imgStackoverflow}></img>
               <div className="footer-sub-section-header__title">stackoverflow</div>
-            </header>
+            </a>
           </section>
         </main>
       </section>
@@ -70,10 +82,16 @@ const Footer = () => {
         </header>
         <main>
           <section className="footer-sub-section">
-            <header className="footer-sub-section-header">
+            <a
+              className="footer-sub-section-header footer-sub-section-header--button"
+              href="assets/Resume.pdf"
+              download="Sohel-Resume.pdf"
+              target="_blank"
+              onClick={onResumeDownloadClick}
+            >
               <img className="footer-sub-section-header__icon" src={imgDownload}></img>
               <div className="footer-sub-section-header__title">Download</div>
-            </header>
+            </a>
           </section>
         </main>
       </section>

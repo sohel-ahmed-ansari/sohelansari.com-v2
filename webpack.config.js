@@ -4,6 +4,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html"
 });
+const CopyPlugin = require('copy-webpack-plugin');
 
 const config = {
   entry: ['@babel/polyfill', './src/index.js'],
@@ -11,7 +12,12 @@ const config = {
     path: path.join(__dirname, 'dist'),
     filename: "[name].js"
   },
-  plugins: [htmlPlugin],
+  plugins: [
+    htmlPlugin,
+    new CopyPlugin([
+      { from: 'src/assets', to: 'assets' },
+    ])
+  ],
   module: {
     rules: [
       {
