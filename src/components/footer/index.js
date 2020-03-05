@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="footer">
       <section className="footer-section">
         <header>
-          <h1>Personal info</h1>
+          <h1>Personal Info</h1>
         </header>
         <main>
           <section className="footer-sub-section">
@@ -35,7 +35,7 @@ const Footer = () => {
               <div className="footer-sub-section-header__title">Email</div>
             </header>
             <main className="footer-sub-section-main">
-              <p>sohel.ahmed.ansari@gmail.com</p>
+              <a href="mailto:sohel.ahmed.ansari@gmail.com">sohel.ahmed.ansari@gmail.com</a>
             </main>
           </section>
           <section className="footer-sub-section">
@@ -44,7 +44,7 @@ const Footer = () => {
               <div className="footer-sub-section-header__title">Phone</div>
             </header>
             <main className="footer-sub-section-main">
-              <a href="tel:=971564710320">+971 564710320</a>
+              <a href="tel:+971564710320">+971 564710320</a>
             </main>
           </section>
         </main>
