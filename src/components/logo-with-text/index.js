@@ -8,7 +8,7 @@ const DivContainer = ({children, className}) => (
 );
 
 const AnchorContainer = ({children, href, className}) => (
-  <a className={className} href={href} target="_blank">
+  <a className={className} href={href} target="_blank" rel="noopener noreferrer external">
     {children}
   </a>
 );
@@ -26,7 +26,7 @@ const LogoWithText = ({label = '', imgSrc, isLightBg, href=''}) => {
         className={`logo__image ${isLightBg ? 'logo__image--light-bg' : ''}`}
         href={href}
       >
-        <img src={imgSrc}></img>
+        <img src={imgSrc} alt={label}></img>
       </Container>
       <div className="logo__title">{label}</div>
     </div>

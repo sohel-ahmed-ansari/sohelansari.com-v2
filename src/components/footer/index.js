@@ -21,7 +21,7 @@ const Footer = () => {
         <main>
           <section className="footer-sub-section">
             <header className="footer-sub-section-header">
-              <img className="footer-sub-section-header__icon" src={imgLocation}></img>
+              <img className="footer-sub-section-header__icon" src={imgLocation} alt="location"></img>
               <div className="footer-sub-section-header__title">Location</div>
             </header>
             <main className="footer-sub-section-main">
@@ -31,7 +31,7 @@ const Footer = () => {
           </section>
           <section className="footer-sub-section">
             <header className="footer-sub-section-header">
-              <img className="footer-sub-section-header__icon" src={imgEmail}></img>
+              <img className="footer-sub-section-header__icon" src={imgEmail} alt="email"></img>
               <div className="footer-sub-section-header__title">Email</div>
             </header>
             <main className="footer-sub-section-main">
@@ -40,7 +40,7 @@ const Footer = () => {
           </section>
           <section className="footer-sub-section">
             <header className="footer-sub-section-header">
-              <img className="footer-sub-section-header__icon" src={imgPhone}></img>
+              <img className="footer-sub-section-header__icon" src={imgPhone} alt="phone"></img>
               <div className="footer-sub-section-header__title">Phone</div>
             </header>
             <main className="footer-sub-section-main">
@@ -59,8 +59,9 @@ const Footer = () => {
               className="footer-sub-section-header"
               href="https://in.linkedin.com/in/sohelansari"
               target="_blank"
+              rel="noopener noreferrer external"
             >
-              <img className="footer-sub-section-header__icon" src={imgLinkedin}></img>
+              <img className="footer-sub-section-header__icon" src={imgLinkedin} alt="linkedin"></img>
               <div className="footer-sub-section-header__title">LinkedIn</div>
             </a>
           </section>
@@ -69,8 +70,9 @@ const Footer = () => {
               className="footer-sub-section-header"
               href="https://stackoverflow.com/users/2279116/shinob"
               target="_blank"
+              rel="noopener noreferrer external"
             >
-              <img className="footer-sub-section-header__icon" src={imgStackoverflow}></img>
+              <img className="footer-sub-section-header__icon" src={imgStackoverflow} alt="stackoverflow"></img>
               <div className="footer-sub-section-header__title">stackoverflow</div>
             </a>
           </section>
@@ -89,7 +91,7 @@ const Footer = () => {
               target="_blank"
               onClick={onResumeDownloadClick}
             >
-              <img className="footer-sub-section-header__icon" src={imgDownload}></img>
+              <img className="footer-sub-section-header__icon" src={imgDownload} alt="download"></img>
               <div className="footer-sub-section-header__title">Download</div>
             </a>
           </section>
