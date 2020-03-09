@@ -40,4 +40,4 @@ git add .
 git commit -m "Your commit message"
 git push origin gh-pages
 ```
-You changes should now be published.
+Your changes should now be published.
