@@ -25,13 +25,15 @@ Just refresh the page after saving your files and your changes will reflect
 ## How to publish
 
 This site is served through github pages.
+
 To publish any changes, first commit and push your code to master.
 Run
 ```
 npm run build
 cd dist
 ```
-When you run `git status` you should now be on `gh-pages` branch.
+When you run `git status` you should now automatically be on `gh-pages` branch.
+
 Commit your changes and push to `gh-pages` branch.
 ```
 git add .
