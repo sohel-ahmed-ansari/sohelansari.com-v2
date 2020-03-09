@@ -4,7 +4,7 @@ This my online resume.
 
 The published site can be seen on https://sohelansari.com
 
-# Publish
+## Publish
 
 This site is served through guthub pages.
 To publish any changes, first commit and push your code to master.
