@@ -29,6 +29,7 @@ This site is served through github pages.
 To publish any changes, first commit and push your code to master.
 Run
 ```
+git worktree add dist gh-pages
 npm run build
 cd dist
 ```
