@@ -14,9 +14,11 @@ const config = {
   },
   plugins: [
     htmlPlugin,
-    new CopyPlugin([
-      { from: 'src/assets', to: 'assets' },
-    ])
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/assets', to: 'assets' }
+      ]
+    })
   ],
   module: {
     rules: [
