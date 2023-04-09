@@ -21,7 +21,11 @@ const Footer = () => {
         <main>
           <section className="footer-sub-section">
             <header className="footer-sub-section-header">
-              <img className="footer-sub-section-header__icon" src={imgLocation} alt="location"></img>
+              <img
+                className="footer-sub-section-header__icon"
+                src={imgLocation}
+                alt="location"
+              ></img>
               <div className="footer-sub-section-header__title">Location</div>
             </header>
             <main className="footer-sub-section-main">
@@ -31,16 +35,26 @@ const Footer = () => {
           </section>
           <section className="footer-sub-section">
             <header className="footer-sub-section-header">
-              <img className="footer-sub-section-header__icon" src={imgEmail} alt="email"></img>
+              <img
+                className="footer-sub-section-header__icon"
+                src={imgEmail}
+                alt="email"
+              ></img>
               <div className="footer-sub-section-header__title">Email</div>
             </header>
             <main className="footer-sub-section-main">
-              <a href="mailto:sohel.ahmed.ansari@gmail.com">sohel.ahmed.ansari@gmail.com</a>
+              <a href="mailto:sohel.ahmed.ansari@gmail.com">
+                sohel.ahmed.ansari@gmail.com
+              </a>
             </main>
           </section>
           <section className="footer-sub-section">
             <header className="footer-sub-section-header">
-              <img className="footer-sub-section-header__icon" src={imgPhone} alt="phone"></img>
+              <img
+                className="footer-sub-section-header__icon"
+                src={imgPhone}
+                alt="phone"
+              ></img>
               <div className="footer-sub-section-header__title">Phone</div>
             </header>
             <main className="footer-sub-section-main">
@@ -61,7 +75,11 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer external"
             >
-              <img className="footer-sub-section-header__icon" src={imgLinkedin} alt="linkedin"></img>
+              <img
+                className="footer-sub-section-header__icon"
+                src={imgLinkedin}
+                alt="linkedin"
+              ></img>
               <div className="footer-sub-section-header__title">LinkedIn</div>
             </a>
           </section>
@@ -72,8 +90,14 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer external"
             >
-              <img className="footer-sub-section-header__icon" src={imgStackoverflow} alt="stackoverflow"></img>
-              <div className="footer-sub-section-header__title">stackoverflow</div>
+              <img
+                className="footer-sub-section-header__icon"
+                src={imgStackoverflow}
+                alt="stackoverflow"
+              ></img>
+              <div className="footer-sub-section-header__title">
+                stackoverflow
+              </div>
             </a>
           </section>
         </main>
@@ -91,8 +115,17 @@ const Footer = () => {
               target="_blank"
               onClick={onResumeDownloadClick}
             >
-              <img className="footer-sub-section-header__icon" src={imgDownload} alt="download"></img>
-              <div className="footer-sub-section-header__title">Download</div>
+              <img
+                className="footer-sub-section-header__icon"
+                src={imgDownload}
+                alt="download"
+              ></img>
+              <div
+                className="footer-sub-section-header__title"
+                style={{ marginTop: 0 }}
+              >
+                Download
+              </div>
             </a>
           </section>
         </main>
