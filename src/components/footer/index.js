@@ -29,8 +29,8 @@ const Footer = () => {
               <div className="footer-sub-section-header__title">Location</div>
             </header>
             <main className="footer-sub-section-main">
-              <p>Dubai</p>
-              <p>United Arab Emirates</p>
+              <p>Berlin</p>
+              <p>Germany</p>
             </main>
           </section>
           <section className="footer-sub-section">
@@ -58,7 +58,7 @@ const Footer = () => {
               <div className="footer-sub-section-header__title">Phone</div>
             </header>
             <main className="footer-sub-section-main">
-              <a href="tel:+971564710320">+971 564710320</a>
+              <a href="tel:+971564710320">+49 1624785430</a>
             </main>
           </section>
         </main>
