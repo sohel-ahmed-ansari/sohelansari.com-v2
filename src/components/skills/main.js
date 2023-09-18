@@ -13,22 +13,21 @@ import imgJquery from './images/jquery.svg';
 import imgNode from './images/node.svg';
 import imgWebpack from './images/webpack.svg';
 
-
 const Main = () => {
   return (
     <main className="section-main">
-      <LogoWithText label={'Javascript'} imgSrc={imgJavascript}/>
-      <LogoWithText label={'React'} imgSrc={imgReact}/>
-      <LogoWithText label={'Redux'} imgSrc={imgRedux}/>
-      <LogoWithText label={'Knockout.js'} imgSrc={imgKnockout}/>
-      <LogoWithText label={'jQuery'} imgSrc={imgJquery}/>
-      <LogoWithText label={'HTML5'} imgSrc={imgHtml5}/>
-      <LogoWithText label={'CSS3'} imgSrc={imgCss3}/>
-      <LogoWithText label={'less'} imgSrc={imgLess}/>
-      <LogoWithText label={'TypeScript'} imgSrc={imgTypescript}/>
-      <LogoWithText label={'Bootstrap'} imgSrc={imgBootstrap}/>
-      <LogoWithText label={'Node.js'} imgSrc={imgNode}/>
-      <LogoWithText label={'webpack'} imgSrc={imgWebpack}/>
+      <LogoWithText label={'React'} imgSrc={imgReact} />
+      <LogoWithText label={'Redux'} imgSrc={imgRedux} />
+      <LogoWithText label={'TypeScript'} imgSrc={imgTypescript} />
+      <LogoWithText label={'Node.js'} imgSrc={imgNode} />
+      <LogoWithText label={'Javascript'} imgSrc={imgJavascript} />
+      <LogoWithText label={'HTML5'} imgSrc={imgHtml5} />
+      <LogoWithText label={'CSS3'} imgSrc={imgCss3} />
+      <LogoWithText label={'Knockout.js'} imgSrc={imgKnockout} />
+      <LogoWithText label={'jQuery'} imgSrc={imgJquery} />
+      <LogoWithText label={'less'} imgSrc={imgLess} />
+      <LogoWithText label={'Bootstrap'} imgSrc={imgBootstrap} />
+      <LogoWithText label={'webpack'} imgSrc={imgWebpack} />
     </main>
   );
 };
