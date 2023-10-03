@@ -40,7 +40,6 @@
   align-items: flex-end;
   z-index: 1;
   max-height: @boxDimension;
-  overflow: hidden;
   &__box {
     flex-basis: auto;
     flex-grow: 0;
@@ -48,11 +47,15 @@
     max-width: @boxDimension;
     width: 25vw;
     padding-top: 25%;
+    margin: 0 10px 10px 0;
+    opacity: 0.7;
     &--color1 {
       background-color: @pink-rose;
+      box-shadow: 10px 10px 0px fade(@pink-rose, 70%);
     }
     &--color2 {
       background-color: @aqua;
+      box-shadow: 10px 10px 0px fade(@aqua, 70%);
     }
   }
 }
