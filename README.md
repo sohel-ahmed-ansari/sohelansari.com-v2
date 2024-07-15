@@ -1,6 +1,6 @@
 # sohelansari.com-v2
 
-This my online resume.
+A static web page for my online resume.
 
 The published site can be seen on https://sohelansari.com
 
